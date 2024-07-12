@@ -25,6 +25,8 @@ This is a simple React Native application that displays a list of employees fetc
 - **Memoization**: React's `useMemo` and `useCallback` hooks are utilized to memoize data, improving rendering performance by avoiding unnecessary re-renders.
 - **Redux Persist**: Used for persisting Redux state across app restarts, enhancing performance by caching data locally.
 
+## Demo
+[Watch the video demo](./employee_demo.mov)
 
 ## Setup Instructions
 
