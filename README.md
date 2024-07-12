@@ -67,6 +67,16 @@ npm start
 
 Run the following command to start your _Android_ or _iOS_ app:
 
+### For iOS
+
+```bash
+# install pods
+npx pod-install
+
+# using npm
+npm run ios
+```
+
 ### For Android
 
 ```bash
@@ -74,12 +84,7 @@ Run the following command to start your _Android_ or _iOS_ app:
 npm run android
 ```
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
-```
 
 ## Contributors
 
