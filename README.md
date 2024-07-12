@@ -11,6 +11,7 @@ This is a simple React Native application that displays a list of employees fetc
 - Show details of selected employee.
 - Handle errors and allow retrying failed requests.
 - Implement pull-to-refresh for updating employee list data.
+- Implement add, edit, delete employee functionalities.
   
 ## Technologies Used
 - React Native
