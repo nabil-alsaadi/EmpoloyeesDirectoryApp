@@ -12,17 +12,6 @@ const StackNavigator: React.FC = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="EmployeeList" component={BottomTabNavigator} options={({ navigation }) => ({
-        //   headerRight: () => (
-        //     <Button
-        //       onPress={() => navigation.navigate('CreateEmployee')}
-        //       title="+"
-        //       color="tomato"
-        //     />
-        //   ),
-        //   headerTitleAlign: 'center',
-        //   headerTitleStyle: {
-        //     fontWeight: 'bold',
-        //   },
           headerShown: false,
           title: 'Employee List',
         })} />

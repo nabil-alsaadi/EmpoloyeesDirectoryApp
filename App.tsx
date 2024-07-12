@@ -19,37 +19,11 @@ const Tab = createBottomTabNavigator();
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
+      <PersistGate loading={null} persistor={persistor}>
       <NavigationContainer>
-        {/* <Tab.Navigator
-          screenOptions={({ route }) => ({
-            tabBarIcon: ({ color, size }) => {
-              let icon;
-    
-              if (route.name === 'EmployeeList') {
-                icon = '🏠';  // Home icon
-              } else if (route.name === 'EmployeeDetails') {
-                icon = 'ℹ️'; // Info icon
-              }
-    
-              return (
-                <Text style={{ color, fontSize: size }}>
-                  {icon}
-                </Text>
-              );
-            },
-          })}
-          tabBarOptions={{
-            activeTintColor: 'tomato',
-            inactiveTintColor: 'gray',
-          }}
-        >
-          <Tab.Screen  name="EmployeeList" component={EmployeeList} />
-          <Tab.Screen name="EmployeeDetails" component={EmployeeDetails} />
-        </Tab.Navigator> */}
         <StackNavigator />
       </NavigationContainer>
-      {/* </PersistGate> */}
+      </PersistGate>
     </Provider>
   );
 };

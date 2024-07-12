@@ -26,7 +26,7 @@ const EmployeeDetails: React.FC<Props> = ({ route, employee, loading, error, fet
   useEffect(() => {
     console.log(id)
     if (id) {
-        // fetchEmployeeDetails disabled for now cause no extra data been fetched
+        
         fetchEmployeeDetails(id);
     }
     

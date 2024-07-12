@@ -119,11 +119,6 @@ import { RootState } from '../redux/rootReducer';
 
 type UpdateEmployeeRouteProp = RouteProp<{ UpdateEmployee: { employee: Employee } }, 'UpdateEmployee'>;
 
-// interface Props {
-//   updateEmployee: (employee: Employee) => Promise<void>;
-//   updateLoading: boolean;
-//   updateError: string | null;
-// }
 
 const UpdateEmployee: React.FC = ({ updateEmployee, updateLoading, updateError }) => {
   const navigation = useNavigation();
@@ -142,16 +137,6 @@ const UpdateEmployee: React.FC = ({ updateEmployee, updateLoading, updateError }
       employee_salary: parseInt(salary),
     };
     updateEmployee(employee.id,updatedEmployee)
-
-    // try {
-    //   await updateEmployee(employee.id,updatedEmployee);
-    //   setIsLoading(false);
-    //   navigation.goBack(); // Navigate back after successful update
-    // } catch (error) {
-    //   setIsLoading(false);
-    //   console.error('Error updating employee:', error);
-    //   // Handle error
-    // }
   };
 
   return (
