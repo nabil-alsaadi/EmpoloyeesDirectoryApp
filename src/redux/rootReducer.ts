@@ -1,12 +1,8 @@
 import { combineReducers } from 'redux';
 import employeesReducer from './reducers/employeesReducer';
 
-// Import your reducers here
-// import { exampleReducer } from './exampleReducer';
 
 const rootReducer = combineReducers({
-  // Add your reducers here
-  // example: exampleReducer,
   employees: employeesReducer
 });
 
