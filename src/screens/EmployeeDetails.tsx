@@ -6,6 +6,7 @@ import { Employee } from '../types/Employee';
 import { RootState } from '../redux/rootReducer';
 import { fetchEmployeeDetails } from '../redux/actions';
 import LoadingIndicator from '../components/LoadingIndicator';
+import CustomButton from '../components/CustomButton';
 
 interface PropsFromState {
   employee?: Employee;
@@ -26,7 +27,7 @@ const EmployeeDetails: React.FC<Props> = ({ route, employee, loading, error, fet
     console.log(id)
     if (id) {
         // fetchEmployeeDetails disabled for now cause no extra data been fetched
-        //fetchEmployeeDetails(id);
+        fetchEmployeeDetails(id);
     }
     
   }, [fetchEmployeeDetails, id]);
@@ -84,12 +85,15 @@ const EmployeeDetails: React.FC<Props> = ({ route, employee, loading, error, fet
   if (!employee) {
     return <Text>Employee not found</Text>;
   }
-  
+  const handleUpdate = () => {
+    navigation.navigate('UpdateEmployee', { employee });
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Name: {employee.employee_name}</Text>
       <Text style={styles.text}>Salary: {employee.employee_salary}</Text>
       <Text style={styles.text}>Age: {employee.employee_age}</Text>
+      <CustomButton title='update employee' onPress={handleUpdate} />
     </View>
   );
 };

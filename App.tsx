@@ -7,18 +7,21 @@ import EmployeeList from './src/screens/EmployeeList';
 import EmployeeDetails from './src/screens/EmployeeDetails';
 import { Text } from 'react-native';
 import { PersistGate } from 'redux-persist/integration/react';
+import CreateEmployee from './src/screens/CreateEmployee';
+import TabNavigator from './src/navigation/BottomTabNavigator';
+import StackNavigator from './src/navigation/StackNavigator';
 
-if (__DEV__) {
-  require("./reactotronConfig");
-}
+// if (__DEV__) {
+//   require("./reactotronConfig");
+// }
 const Tab = createBottomTabNavigator();
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+      {/* <PersistGate loading={null} persistor={persistor}> */}
       <NavigationContainer>
-        <Tab.Navigator
+        {/* <Tab.Navigator
           screenOptions={({ route }) => ({
             tabBarIcon: ({ color, size }) => {
               let icon;
@@ -43,9 +46,10 @@ const App: React.FC = () => {
         >
           <Tab.Screen  name="EmployeeList" component={EmployeeList} />
           <Tab.Screen name="EmployeeDetails" component={EmployeeDetails} />
-        </Tab.Navigator>
+        </Tab.Navigator> */}
+        <StackNavigator />
       </NavigationContainer>
-      </PersistGate>
+      {/* </PersistGate> */}
     </Provider>
   );
 };
