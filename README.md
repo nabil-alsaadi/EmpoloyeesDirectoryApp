@@ -44,7 +44,7 @@ To run this app locally on your machine, follow these steps:
    ```bash
    git clone https://github.com/nabil-alsaadi/EmpoloyeesDirectoryApp.git
    
-   cd EmployeeDirectoryApp
+   cd EmpoloyeesDirectoryApp
    ```
 ## Step 2: Install dependencies:
    ```bash
